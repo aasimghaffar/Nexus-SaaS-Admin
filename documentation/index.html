@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus SaaS Admin - Complete Official Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS (compiled, production build) -->
+  <link rel="stylesheet" href="./assets/css/tailwind.css">
+  <link rel="stylesheet" href="../dist/assets/css/custom.css">
+  <script src="../dist/assets/js/theme.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-dark-950 dark:text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="h-16 glass-header border-b border-slate-200/80 dark:border-dark-800 flex items-center justify-between px-6 sticky top-0 z-30">
+    <div class="flex items-center gap-3">
+      <img src="./assets/images/logo-light.svg" alt="Nexus Logo" class="h-8 dark:hidden">
+      <img src="./assets/images/logo-dark.svg" alt="Nexus Logo" class="h-8 hidden dark:block">
+      <span class="px-2.5 py-1 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 font-mono text-[11px] font-bold">Docs v1.0.0</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <button data-toggle="theme" class="p-2 rounded-xl text-slate-500 hover:bg-slate-100 dark:hover:bg-dark-800">
+        <svg class="w-5 h-5 theme-moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        <svg class="w-5 h-5 theme-sun-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </button>
+      <a href="../dist/index.html" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-md shadow-brand-500/20">Live App Demo &rarr;</a>
+    </div>
+  </header>
+
+  <!-- Docs Layout -->
+  <div class="max-w-7xl w-full mx-auto flex-1 flex flex-col md:flex-row">
+    <!-- Sidebar Navigation -->
+    <aside class="w-full md:w-64 p-6 border-b md:border-b-0 md:border-r border-slate-200 dark:border-dark-800 space-y-6 text-xs font-semibold">
+      <div>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Getting Started</p>
+        <ul class="space-y-2">
+          <li><a href="#introduction" class="text-brand-600 dark:text-brand-400">Introduction</a></li>
+          <li><a href="#quick-start" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Quick Start & Setup</a></li>
+          <li><a href="#folder-structure" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Folder Structure</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Customization</p>
+        <ul class="space-y-2">
+          <li><a href="#tailwind-config" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Tailwind & Theme Colors</a></li>
+          <li><a href="#dark-mode" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Dark Mode Engine</a></li>
+          <li><a href="#apexcharts" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">ApexCharts Guide</a></li>
+          <li><a href="#ui-kit-guide" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Separate UI Kit Pages</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">Standards & SEO</p>
+        <ul class="space-y-2">
+          <li><a href="#mobile-responsive" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">Mobile Responsiveness</a></li>
+          <li><a href="#seo-optimization" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">SEO & Meta Tags</a></li>
+          <li><a href="#codecanyon-policy" class="text-slate-600 dark:text-dark-300 hover:text-slate-900">CodeCanyon Review Guide</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Docs Content -->
+    <main class="flex-1 p-6 sm:p-10 max-w-4xl space-y-12">
+      <!-- Section 1: Intro -->
+      <section id="introduction" class="space-y-4">
+        <h1 class="text-3xl font-extrabold tracking-tight">Introduction to Nexus SaaS</h1>
+        <p class="text-sm text-slate-600 dark:text-dark-300 leading-relaxed">
+          <strong>Nexus</strong> is a multi-purpose, commercial-grade Tailwind CSS Admin Dashboard and Application UI Kit built specifically for SaaS founders, product teams, and full-stack developers. It adheres to all Envato / CodeCanyon quality standards, offering clean, semantic, WCAG-accessible HTML5 markup with zero framework lock-in.
+        </p>
+      </section>
+
+      <!-- Section 2: Quick Start -->
+      <section id="quick-start" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">Quick Start & Development</h2>
+        <p class="text-xs text-slate-600 dark:text-dark-300">Run local development with the Tailwind CLI or open static files directly:</p>
+
+        <div class="p-4 rounded-2xl bg-slate-900 text-slate-100 font-mono text-xs space-y-2 overflow-x-auto">
+          <p class="text-slate-400"># 1. Install dependencies</p>
+          <p>npm install</p>
+          <p class="text-slate-400 pt-2"># 2. Start Tailwind watcher for live compilation</p>
+          <p>npm run dev</p>
+          <p class="text-slate-400 pt-2"># 3. Build minified production stylesheet</p>
+          <p>npm run build</p>
+        </div>
+      </section>
+
+      <!-- Section 3: Folder Structure -->
+      <section id="folder-structure" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">Folder & Asset Hierarchy</h2>
+        <div class="p-4 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 font-mono text-xs text-slate-700 dark:text-dark-300 leading-relaxed overflow-x-auto">
+          <pre>nexus-saas-admin/
+├── dist/                # Production-ready HTML pages
+│   ├── assets/
+│   │   ├── css/         # custom.css, tailwind.css
+│   │   ├── js/          # theme.js, app.js, charts.js, datatables.js, kanban.js
+│   │   └── images/      # avatars/, brands/, illustrations/, logo.svg
+│   ├── ui-*.html        # 9 Dedicated UI Kit component pages
+│   ├── auth-*.html      # 6 Authentication suite screens
+│   └── *.html           # SaaS Dashboards, Billing, Kanban, Invoices
+├── src/                 # Source Tailwind input.css files
+├── codecanyon-assets/   # Banners, Screenshots, Description & Submission checklist
+├── documentation/       # This official item documentation
+├── tailwind.config.js   # Tailwind theme palette & font extensions
+└── package.json         # NPM scripts and build commands</pre>
+        </div>
+      </section>
+
+      <!-- Section 4: Separate UI Kit Pages -->
+      <section id="ui-kit-guide" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">9 Dedicated UI Kit Pages</h2>
+        <p class="text-xs text-slate-600 dark:text-dark-300">Each UI element has its own dedicated page with live interactive examples and clean markup:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <a href="../dist/ui-buttons.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">1. Buttons & Actions &rarr;</a>
+          <a href="../dist/ui-alerts.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">2. Alerts & Toasts &rarr;</a>
+          <a href="../dist/ui-badges.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">3. Badges & Tags &rarr;</a>
+          <a href="../dist/ui-cards.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">4. Cards & Widgets &rarr;</a>
+          <a href="../dist/ui-forms.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">5. Forms & Controls &rarr;</a>
+          <a href="../dist/ui-modals.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">6. Modals & Dialogs &rarr;</a>
+          <a href="../dist/ui-tabs.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">7. Tabs & Accordions &rarr;</a>
+          <a href="../dist/ui-tables.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">8. Tables & Grids &rarr;</a>
+          <a href="../dist/ui-typography.html" class="p-3 rounded-xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800 hover:border-brand-500 font-bold block">9. Typography & Code &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Section 5: SEO Optimization -->
+      <section id="seo-optimization" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">SEO Best Practices & Meta Tags</h2>
+        <p class="text-xs text-slate-600 dark:text-dark-300">Every page is optimized with standard Open Graph, Twitter Cards, and canonical meta structures:</p>
+        <div class="p-4 rounded-2xl bg-slate-900 text-slate-100 font-mono text-xs overflow-x-auto">
+          <pre>&lt;meta name="description" content="Nexus SaaS Admin - Multipurpose Dashboard Template"&gt;
+&lt;meta property="og:title" content="Nexus SaaS Admin Panel"&gt;
+&lt;meta property="og:description" content="High-converting commercial SaaS UI Kit"&gt;
+&lt;meta property="og:image" content="./assets/images/og-preview.png"&gt;
+&lt;meta name="robots" content="index, follow"&gt;</pre>
+        </div>
+      </section>
+
+      <!-- Section 6: Mobile Responsiveness -->
+      <section id="mobile-responsive" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">Mobile Responsiveness & Touch Optimization</h2>
+        <p class="text-xs text-slate-600 dark:text-dark-300">
+          Nexus uses an off-canvas drawer navigation for mobile screens below 1024px (`lg:` breakpoint) with automatic backdrop blur, body scroll-locking, and touch gesture support.
+        </p>
+      </section>
+
+      <!-- Section 7: CodeCanyon Standards -->
+      <section id="codecanyon-policy" class="space-y-4">
+        <h2 class="text-2xl font-bold tracking-tight">CodeCanyon Policy & Quality Compliance</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div class="p-4 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800">
+            <h4 class="font-bold text-slate-900 dark:text-white mb-1">&check; 100% W3C Valid Markup</h4>
+            <p class="text-slate-500 dark:text-dark-400">Semantic elements, proper alt attributes on all graphics, and full keyboard navigation support.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800">
+            <h4 class="font-bold text-slate-900 dark:text-white mb-1">&check; No Missing External Assets</h4>
+            <p class="text-slate-500 dark:text-dark-400">All avatars, logos, and vector illustrations are self-contained SVG files to avoid broken links.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800">
+            <h4 class="font-bold text-slate-900 dark:text-white mb-1">&check; Cross-Browser & Mobile First</h4>
+            <p class="text-slate-500 dark:text-dark-400">Tested across Chrome, Safari, Firefox, Edge, and iOS/Android viewports.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-dark-800">
+            <h4 class="font-bold text-slate-900 dark:text-white mb-1">&check; Dark & Light Persistence</h4>
+            <p class="text-slate-500 dark:text-dark-400">Flicker-free theme switching with automatic localStorage synchronization.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="border-t border-slate-200/80 dark:border-dark-800 py-6 text-center text-xs text-slate-400">
+    &copy; 2026 Nexus SaaS Admin Template Documentation. All rights reserved.
+  </footer>
+
+  <script src="../dist/assets/js/app.js"></script>
+</body>
+</html>

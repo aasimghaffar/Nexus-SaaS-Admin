@@ -1,0 +1,33 @@
+{
+  "name": "nexus-saas-admin",
+  "version": "1.0.0",
+  "description": "Nexus - Premium Tailwind CSS SaaS Admin Dashboard & Application Template for CodeCanyon",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/assets/css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/assets/css/tailwind.css --minify",
+    "serve": "npx serve dist"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "admin-dashboard",
+    "saas-template",
+    "admin-panel",
+    "codecanyon",
+    "dashboard-template",
+    "dark-mode",
+    "crm",
+    "analytics"
+  ],
+  "author": "Nexus Design Studio",
+  "license": "Envato Regular / Extended License",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10"
+  },
+  "dependencies": {
+    "apexcharts": "^3.45.2"
+  }
+}

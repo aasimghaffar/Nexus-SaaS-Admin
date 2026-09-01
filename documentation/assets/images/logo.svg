@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <defs>
+    <linearGradient id="nexusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo Icon -->
+  <rect x="2" y="4" width="32" height="32" rx="8" fill="url(#nexusGrad)"/>
+  <path d="M11 26V14L20 23V14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="2.5" fill="#ffffff"/>
+  <!-- Logo Text -->
+  <text x="44" y="26" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="20" font-weight="800" fill="#0F172A" class="dark:fill-white">NEXUS</text>
+  <rect x="116" y="11" width="34" height="18" rx="4" fill="#EEF2FF"/>
+  <text x="122" y="24" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="10" font-weight="700" fill="#4F46E5">PRO</text>
+</svg>
